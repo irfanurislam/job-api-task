@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "ABC Inc.",
+      "location": "New York, NY",
+      "description": "We are looking for a frontend developer...",
+      "language": "JavaScript"
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "company": "XYZ Ltd.",
+      "location": "San Francisco, CA",
+      "description": "Join our backend development team...",
+      "language": "Python"
+    },
+    {
+      "id": 3,
+      "title": "Data Scientist",
+      "company": "Data Corp.",
+      "location": "Los Angeles, CA",
+      "description": "We are hiring data scientists...",
+      "language": "Python"
+    },
+    {
+      "id": 4,
+      "title": "Mobile App Developer",
+      "company": "App Solutions",
+      "location": "Seattle, WA",
+      "description": "Join our mobile app development team...",
+      "language": "Java"
+    },
+    {
+      "id": 5,
+      "title": "Full Stack Developer",
+      "company": "Tech Innovators",
+      "location": "Austin, TX",
+      "description": "We are seeking full-stack developers...",
+      "language": "JavaScript"
+    },
+    {
+      "id": 6,
+      "title": "DevOps Engineer",
+      "company": "Cloud Systems",
+      "location": "Chicago, IL",
+      "description": "Join our DevOps team...",
+      "language": "Python"
+    },
+    {
+      "id": 7,
+      "title": "Machine Learning Engineer",
+      "company": "AI Solutions",
+      "location": "Boston, MA",
+      "description": "We are looking for ML engineers...",
+      "language": "Python"
+    },
+    {
+      "id": 8,
+      "title": "Web Designer",
+      "company": "Design Studios",
+      "location": "Denver, CO",
+      "description": "Join our web design team...",
+      "language": "HTML/CSS"
+    },
+    {
+      "id": 9,
+      "title": "UI/UX Designer",
+      "company": "UX Innovations",
+      "location": "San Diego, CA",
+      "description": "We are hiring UI/UX designers...",
+      "language": "Design"
+    },
+    {
+      "id": 10,
+      "title": "QA Tester",
+      "company": "Quality Assurance Inc.",
+      "location": "Dallas, TX",
+      "description": "Join our QA testing team...",
+      "language": "Testing"
+    }
+  ]
+  
