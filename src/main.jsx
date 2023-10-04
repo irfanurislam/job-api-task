@@ -15,6 +15,10 @@ import JobDetailPage from './Components/JobDetailPage';
 import ApplicationForm from './Components/ApplicationForm';
 import SuccessPage from './Components/SuccessPage';
 
+import ProtectedRoute from './Components/ProtectedRoute';
+import ProtectedPage from './Components/ProtectedPage';
+import { AuthProvider } from './Components/AuthContext';
+
 
 const router = createBrowserRouter([
   {
@@ -26,19 +30,22 @@ const router = createBrowserRouter([
         element: <App></App>
       },
       {path:'/landingpage',
-       element: <LandingPage></LandingPage>
+       element: <ProtectedRoute><LandingPage></LandingPage></ProtectedRoute>
       },
       {path:'/joblistpage',
-       element: <JobListPage></JobListPage>
+       element: <ProtectedRoute><JobListPage></JobListPage></ProtectedRoute>
       },
       {path:'/jobdetailspage',
-       element: <JobDetailPage></JobDetailPage>
+       element: <ProtectedRoute><JobDetailPage></JobDetailPage></ProtectedRoute>
       },
       {path:'/applicationpage',
-       element: <ApplicationForm></ApplicationForm>
+       element: <ProtectedRoute><ApplicationForm></ApplicationForm></ProtectedRoute>
       },
       {path:'/successpage',
        element: <SuccessPage></SuccessPage>
+      },
+      {path:'/protectedpage',
+       element: <ProtectedRoute><ProtectedPage></ProtectedPage></ProtectedRoute>
       },
       {
         path: "/login",
@@ -55,6 +62,14 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <AuthProvider> <RouterProvider router={router} />
+     
+     </AuthProvider>
+   
   </React.StrictMode>,
 )
+
+
+
+
+

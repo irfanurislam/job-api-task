@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from './AuthContext';
+
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate()
+    const { setAuthenticated } = useAuth();
     const handleSignup = () => {
         const users = JSON.parse(localStorage.getItem('users')) || [];
     
@@ -25,6 +28,7 @@ const SignUp = () => {
     
           // Redirect or perform further actions
           alert('Signup successful! You can now login.');
+          setAuthenticated(true);
           navigate('/login')
 
         }

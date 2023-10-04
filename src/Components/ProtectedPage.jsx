@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from './AuthProvider';
+import { useAuth } from './AuthContext';
+
 
 
 const ProtectedPage = () => {
   const { authenticated, setAuthenticated } = useAuth();
+  console.log(authenticated,setAuthenticated)
 
   // Logout function
   const handleLogout = () => {

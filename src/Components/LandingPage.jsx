@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useAuth } from './AuthContext';
+
 
 function LandingPage() {
   const [selectedLanguage, setSelectedLanguage] = useState('');
@@ -19,7 +21,12 @@ function LandingPage() {
     }
   };
 
+  const {authenticated} = useAuth()
+  console.log(authenticated)
+
   return (
+   <>
+   
     <div className="bg-gray-200 min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded shadow-md w-96">
         <h2 className="text-2xl mb-4">Welcome to the Job Portal</h2>
@@ -44,6 +51,8 @@ function LandingPage() {
         </button>
       </div>
     </div>
+   
+   </>
   );
 }
 
